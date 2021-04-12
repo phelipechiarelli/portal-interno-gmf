@@ -1,0 +1,114 @@
+#webOs {
+    display: block;
+    /* background:#4b9ed7; */
+    overflow: hidden;
+    height: 170px;
+    padding: 2px 15px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+#webOs ul {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+#webOs ul li {
+    float: left;
+    list-style-type: none;
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+    position: relative;
+    top: 0px;
+    z-index: 31;
+    -webkit-transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1);
+    /* older webkit */
+    -webkit-transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -moz-transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -o-transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition: all 200ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    /* easeOutBack */
+}
+
+#webOs ul:after,
+#webOs ul:before {
+    content: "";
+    display: block;
+    /* background:#4b9ed7; */
+    border: 0px;
+    position: relative;
+    z-index: 30;
+    width: 10px;
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+
+#webOs ul li:hover {
+    background: #fff;    
+}
+
+#webOs ul:before {
+    border-right: 20px solid red;
+    background: red;
+    left: -4px;
+    height: 135px;
+    display: none;
+}
+
+#webOs ul:after {
+    border-left: 10px solid #e02020;
+    background: #e02020;
+    right: 0px;
+    display: none;
+}
+
+#webOs ul li a {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    align-content: center;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* .cf {
+    *zoom: 1;
+} */
+
+.img-webOS {
+    width: auto;
+    height: 50%;
+    transform: skew(10deg);
+}

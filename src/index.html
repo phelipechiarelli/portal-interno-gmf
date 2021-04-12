@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <title>GMF - Portal de Sistemas Internos</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilo.css" rel="stylesheet">
+  <link href="css/webOS.css" rel="stylesheet">
+  <link href="css/webOS2.css" rel="stylesheet">
+  <link href="css/relogio.css" rel="stylesheet">
+  <link href="https://jaysalvat.github.io/vegas/releases/latest/vegas.min.css" rel="stylesheet">
+  <link href="img/icone.ico" rel="shortcut icon">
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Kanit&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://jaysalvat.github.io/vegas/releases/latest/vegas.js"></script>
+
+
+  <!-- "Fracasso é uma possibilidade por aqui. Se as coisas não estão fracassando, você não está inovando o suficiente." - Elon Musk -->
+  <!-- inspirado no menu de navegação das smartvs LG com webOs -->
+
+</head>
+
+<body>  
+
+  <div class="fundo"></div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3 clearfix topo-esq" style="top: 40px">
+      <div class="row">
+        <div class="mx-auto col-md-6 mb-3 clearfix nav-topo">
+          <nav id="webOs" class="cf clearfix" data-webOs="automatic">
+            <ul class="cf">
+              <li class="d-flex align-items-center justify-content-center boxShadow">
+                <img class="image  pl-5" src="./img/GMF_220X82.png" alt="">
+                </a>
+              </li>              
+            </ul>
+          </nav>
+          <p class="sistemas">Sistemas</p>
+          <p class="internos">Internos</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-3 clearfix float-right" style="top: 50px">
+      <article class="clock">
+        <p class="date"></p>
+        <h1 class="time"></h1>
+      </article>
+    </div>
+  </div>
+
+  <div class="row container-fluid">
+    <div class="mx-auto col-md-12 mb-3 clearfix destaque bg-white">
+      <nav id="webOs2" class="cf clearfix" data-webOs2="automatic">
+        <ul class="cf">
+          <li  class="align-items-center justify-content-center metrus-logo">
+            <img class="img-webOS metrus-logo-img" src="img/logo_metrus3.png">
+            <a id="harlem" href="https://bonito.cedae.corp/metrusdev/" target="_blank">
+              <label id="desenv">Link para o Metrus 3, ambiente de desenvolvimento</label>
+              <p class="pt-2">desenvolvimento</p>            
+            </a>   
+            <a id="bruce" href="https://bonito.cedae.corp/metrusteste/" target="_blank">
+              <label id="teste1">Link para o Metrus 3, ambiente de teste 1</label>
+              <p>teste 1</p>
+            </a>   
+            <a id="bruce" href="https://bonito.cedae.corp/metrusteste2/" target="_blank">
+             <label id="teste2">Link para o Metrus 3, ambiente de teste 2</label>
+              <p>teste 2</p>
+            </a>       
+          </li>
+
+          <li  class="align-items-center justify-content-center fatura-corporativa">
+            <img class="img-webOS fatura_corporativa-logo-img" src="img/logo_branco.png">
+            <a id="harlem" href="http://10.10.0.76:7006/faturao/#/login" target="_blank">
+              <label id="desenv">Link para a Fatura Corporativa, ambiente de desenvolvimento</label>
+              <p class="pt-2">desenvolvimento</p>            
+            </a>   
+           <a id="bruce" href="http://10.10.0.76:9002/faturao/#/login" target="_blank">
+              <label id="teste1">Link para a Fatura Corporativa, ambiente de teste</label>
+              <p>teste</p>
+            </a>   
+
+          </li>
+
+          <li  class="align-items-center justify-content-center cedae-src">
+            <img class="img-webOS cedae-src-logo" src="img/src1.png">
+            <a id="harlem" href="http://10.10.0.76:7006/src/#/login" target="_blank">
+              <label id="desenv">Link para o SRC, ambiente de desenvolvimento</label>
+              <p class="pt-2">desenvolvimento</p>            
+            </a>   
+            <a id="bruce" href="http://10.10.0.76:9002/src/#/login" target="_blank">
+              <label id="teste1">Link para o SRC, ambiente de teste</label>
+              <p>teste </p>
+            </a>   
+          </li>
+          
+          
+          <li class="d-flex align-items-center justify-content-center mantis">
+            <a href="http://10.10.0.76:8080/mantis/login_page.php" target="_blank">
+              <label id="mantis">Acesso ao Mantis Bug Tracker</label>
+              <img class="img-webOS mantis-img"
+                src="img/mantis_logo_262x90.png">
+            </a>
+          </li>
+          <li class="d-flex align-items-center justify-content-center git-lab">
+            <a href="https://git-dev.cedae.corp/users/sign_in" target="_blank">
+              <label id="gitlab">Acesso ao repositório GitLab</label>
+              <img  class="img-webOS git-lab-img"
+                src="img/gitlab-logo-gray-stacked-rgb.png">
+            </a>
+          </li>
+          <li class="d-flex align-items-center justify-content-center time-sheet">
+            <a href="http://mantis/CedaePedidos/login_page.php" target="_blank">
+              <label id="timesheet">Acesso ao sistema de registro de atividades</label>
+              <img class="img-webOS time-sheet-img"
+                src="img/unnamed.png">
+            </a>
+          </li>
+          <li class="d-flex align-items-center justify-content-center test-link">
+            <a href="http://10.10.0.76:8081/testlink" target="_blank">
+              <label id="testlink">Acesso ao sistema de teste de software Test Link</label>
+              <img class="img-webOS test-link-img"
+                src="img/1_ezeaO1L6xMh55p00csxPfw.png">
+            </a>
+          </li>
+          <li class="d-flex align-items-center justify-content-center g-drive">
+            <a href="https://drive.google.com/drive/folders/1ixmK23Yw4XLz7nl7lGbS2vaCWWtlpi5K" target="_blank">
+              <label id="gdrive">Acesso ao repositório de documentos no Google Drive</label>
+              <img class="img-webOS g-drive-img" src="img/google-drive-512.png">
+            </a>
+          </li>
+          <li class="d-flex align-items-center justify-content-center ahgora">
+            <a href="https://www.ahgora.com.br/batidaonline" target="_blank">
+              <label id="ahgora">Acesso ao sistema de ponto online Ahgora</label>
+              <img class="img-webOS ahgora-img"
+                src="img/logo_aghora.png">
+            </a>
+          </li>
+
+          <li class="d-flex align-items-center justify-content-center webdemonstrativo">
+            <a href="http://www.webdemonstrativo.com.br/gmf" target="_blank">
+              <label id="ahgora">Acesso ao contra-cheque online</label>
+              <img class="img-webOS ahgora-img"
+                src="img/GMF_220X82.png">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+  <script src="js/webOS.js"></script>
+  <script src="js/webOS2.js"></script>
+  <script src="js/relogio.js"></script>
+  <script src="js/slideshow.js"></script>
+
+</body>
+
+</html>

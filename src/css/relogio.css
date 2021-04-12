@@ -1,0 +1,49 @@
+.clock {
+    font-size: 1em;
+    padding: 0 0.5rem;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    color: #daf6ff;
+    text-shadow: 0 0 20px rgba(30,144,255, 1),  0 0 20px rgba(0,0,255, 1);
+    position: relative;
+    top: 50%;
+    left: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 30;
+  }
+  
+  .time {
+    font-weight: normal;
+    font-size: 1.5em;
+    letter-spacing: 0.35rem;
+    margin: 0 0 1;
+    transform: skew(-10deg) !important;
+  }
+  
+  .date {
+    letter-spacing: 0.175rem;
+    word-spacing: 0.5rem;
+    margin: 0;
+    transform: skew(-10deg) !important;
+  }
+  
+  @media only screen and (min-width: 30em) {
+  .clock {
+    font-size: 1.5rem;    
+  } 
+    
+  .time {
+    font-size: 2.5em;    
+  }
+    
+  }
+
+
+  @media (max-width: 1440px) {
+
+    .clock {
+      left: 75%;
+    }
+
+  }
